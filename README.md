@@ -1,12 +1,12 @@
 # Job Application Tracker
 
-A full-stack web application for tracking job applications through different hiring stages. Built for the InternSathi Full Stack Internship assignment.
+A full-stack web application for tracking job applications through different hiring stages.
 
 ## Tech Stack
 
-- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS, TanStack React Query
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS, Redux Toolkit (RTK Query), React Hook Form, Zod
 - **Backend:** Express.js, TypeScript, Prisma ORM, Zod validation
-- **Database:** SQLite (via Prisma)
+- **Database:** PostgreSQL (via Prisma)
 - **API Style:** REST
 
 ## Prerequisites
@@ -16,10 +16,6 @@ A full-stack web application for tracking job applications through different hir
 ## Installation
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-cd nexus
-
 # Install backend dependencies
 cd backend
 pnpm install
@@ -34,7 +30,7 @@ pnpm install
 Backend (`backend/.env`):
 
 ```
-DATABASE_URL="file:./dev.db"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/postgres?schema=public"
 PORT=4000
 ```
 
